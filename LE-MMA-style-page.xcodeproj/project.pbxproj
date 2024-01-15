@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2F00512B559D7C00125AD9 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F00502B559D7C00125AD9 /* Text+Extension.swift */; };
+		FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F00552B55AE7900125AD9 /* ScrollView.swift */; };
 		FA605B722B55580A0046AB81 /* LE_MMA_style_pageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */; };
 		FA605B742B55580A0046AB81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA605B732B55580A0046AB81 /* ContentView.swift */; };
 		FA605B762B55580B0046AB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605B752B55580B0046AB81 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2F00502B559D7C00125AD9 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		FA2F00552B55AE7900125AD9 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		FA605B6E2B55580A0046AB81 /* LE-MMA-style-page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LE-MMA-style-page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LE_MMA_style_pageApp.swift; sourceTree = "<group>"; };
 		FA605B732B55580A0046AB81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */,
 				FA605B732B55580A0046AB81 /* ContentView.swift */,
+				FA2F00502B559D7C00125AD9 /* Text+Extension.swift */,
+				FA2F00552B55AE7900125AD9 /* ScrollView.swift */,
 				FA605B752B55580B0046AB81 /* Assets.xcassets */,
 				FA605B772B55580B0046AB81 /* Preview Content */,
 			);
@@ -77,12 +83,15 @@
 				FA605B6A2B55580A0046AB81 /* Sources */,
 				FA605B6B2B55580A0046AB81 /* Frameworks */,
 				FA605B6C2B55580A0046AB81 /* Resources */,
+				FA605B842B555F050046AB81 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "LE-MMA-style-page";
+			packageProductDependencies = (
+			);
 			productName = "LE-MMA-style-page";
 			productReference = FA605B6E2B55580A0046AB81 /* LE-MMA-style-page.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +120,10 @@
 				Base,
 			);
 			mainGroup = FA605B652B55580A0046AB81;
+			packageReferences = (
+				FA605B7F2B555EF80046AB81 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				FA2F00522B55A36000125AD9 /* XCRemoteSwiftPackageReference "SwiftFX" */,
+			);
 			productRefGroup = FA605B6F2B55580A0046AB81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,12 +145,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA605B842B555F050046AB81 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA605B6A2B55580A0046AB81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA605B742B55580A0046AB81 /* ContentView.swift in Sources */,
+				FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */,
+				FA2F00512B559D7C00125AD9 /* Text+Extension.swift in Sources */,
 				FA605B722B55580A0046AB81 /* LE_MMA_style_pageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +308,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LE-MMA-style-page/Preview Content\"";
+				DEVELOPMENT_TEAM = XF36CTA732;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,7 +338,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LE-MMA-style-page/Preview Content\"";
+				DEVELOPMENT_TEAM = XF36CTA732;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -342,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA2F00522B55A36000125AD9 /* XCRemoteSwiftPackageReference "SwiftFX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heestand-xyz/SwiftFX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FA605B7F2B555EF80046AB81 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = FA605B662B55580A0046AB81 /* Project object */;
 }

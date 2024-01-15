@@ -1,0 +1,149 @@
+{
+  "pins" : [
+    {
+      "identity" : "collectionconcurrencykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JohnSundell/CollectionConcurrencyKit.git",
+      "state" : {
+        "revision" : "b4f23e24b5a1bff301efc5e70871083ca029ff95",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "coregraphicsextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/CoreGraphicsExtensions",
+      "state" : {
+        "revision" : "d709d012c874482240c0cffc0e458d95c0ede8c8",
+        "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "7892a123f7e8d0fe62f9f03728b17bbd4f94df5c",
+        "version" : "1.8.1"
+      }
+    },
+    {
+      "identity" : "pixelcolor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/PixelColor",
+      "state" : {
+        "revision" : "cfc6181e25b1963206cb8c9d0f556adb6a625925",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "pixelkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/PixelKit",
+      "state" : {
+        "revision" : "1d20f0db7536ea433fecd924b5eea8e1ad3bd8f1",
+        "version" : "2.2.4"
+      }
+    },
+    {
+      "identity" : "renderkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/RenderKit",
+      "state" : {
+        "revision" : "06782ee0ea9d15ded503bfc7ee7efb9db53859b1",
+        "version" : "1.2.3"
+      }
+    },
+    {
+      "identity" : "resolution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/Resolution",
+      "state" : {
+        "revision" : "0fdee03d7b312f075897cdac437f366cc6631d6a",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "sourcekitten",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/SourceKitten.git",
+      "state" : {
+        "revision" : "b6dc09ee51dfb0c66e042d2328c017483a1a5d56",
+        "version" : "0.34.1"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "8f4d2753f0e4778c76d5f05ad16c74f707390531",
+        "version" : "1.2.3"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "6ad4ea24b01559dde0773e3d091f1b9e36175036",
+        "version" : "509.0.2"
+      }
+    },
+    {
+      "identity" : "swiftfx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/SwiftFX",
+      "state" : {
+        "revision" : "5542eae94ac014b78ab832dfd22610904d626c60",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftlint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/SwiftLint",
+      "state" : {
+        "revision" : "f17a4f9dfb6a6afb0408426354e4180daaf49cee",
+        "version" : "0.54.0"
+      }
+    },
+    {
+      "identity" : "swiftytexttable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scottrhoyt/SwiftyTextTable.git",
+      "state" : {
+        "revision" : "c6df6cf533d120716bff38f8ff9885e1ce2a4ac3",
+        "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "swxmlhash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/drmohundro/SWXMLHash.git",
+      "state" : {
+        "revision" : "a853604c9e9a83ad9954c7e3d2a565273982471f",
+        "version" : "7.0.2"
+      }
+    },
+    {
+      "identity" : "texturemap",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heestand-xyz/TextureMap",
+      "state" : {
+        "revision" : "c6845fb31a7ba5337c607faeedbeb1d3053c4a50",
+        "version" : "0.9.0"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "0d9ee7ea8c4ebd4a489ad7a73d5c6cad55d6fed3",
+        "version" : "5.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}
