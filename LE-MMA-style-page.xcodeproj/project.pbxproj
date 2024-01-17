@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2409F22B585FDC0024DEFC /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2409F12B585FDC0024DEFC /* CustomScrollView.swift */; };
+		FA2409F42B58624A0024DEFC /* ParallaxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2409F32B58624A0024DEFC /* ParallaxImage.swift */; };
+		FA2409F72B587AC80024DEFC /* FirstScreenContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2409F62B587AC80024DEFC /* FirstScreenContents.swift */; };
+		FA2409FA2B5883F10024DEFC /* NegativeTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2409F92B5883F10024DEFC /* NegativeTitle.swift */; };
 		FA2F00512B559D7C00125AD9 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F00502B559D7C00125AD9 /* Text+Extension.swift */; };
 		FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F00552B55AE7900125AD9 /* ScrollView.swift */; };
 		FA605B722B55580A0046AB81 /* LE_MMA_style_pageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2409F12B585FDC0024DEFC /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		FA2409F32B58624A0024DEFC /* ParallaxImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxImage.swift; sourceTree = "<group>"; };
+		FA2409F62B587AC80024DEFC /* FirstScreenContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenContents.swift; sourceTree = "<group>"; };
+		FA2409F92B5883F10024DEFC /* NegativeTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeTitle.swift; sourceTree = "<group>"; };
 		FA2F00502B559D7C00125AD9 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
 		FA2F00552B55AE7900125AD9 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		FA605B6E2B55580A0046AB81 /* LE-MMA-style-page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LE-MMA-style-page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA2409F52B587AA60024DEFC /* ScreenContents */ = {
+			isa = PBXGroup;
+			children = (
+				FA2409F62B587AC80024DEFC /* FirstScreenContents.swift */,
+			);
+			path = ScreenContents;
+			sourceTree = "<group>";
+		};
+		FA2409F82B5883DE0024DEFC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA2409F92B5883F10024DEFC /* NegativeTitle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FA605B652B55580A0046AB81 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +82,10 @@
 				FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */,
 				FA605B732B55580A0046AB81 /* ContentView.swift */,
 				FA2F00502B559D7C00125AD9 /* Text+Extension.swift */,
+				FA2409F12B585FDC0024DEFC /* CustomScrollView.swift */,
+				FA2409F82B5883DE0024DEFC /* Components */,
+				FA2409F52B587AA60024DEFC /* ScreenContents */,
+				FA2409F32B58624A0024DEFC /* ParallaxImage.swift */,
 				FA2F00552B55AE7900125AD9 /* ScrollView.swift */,
 				FA605B752B55580B0046AB81 /* Assets.xcassets */,
 				FA605B772B55580B0046AB81 /* Preview Content */,
@@ -173,8 +201,12 @@
 			files = (
 				FA605B742B55580A0046AB81 /* ContentView.swift in Sources */,
 				FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */,
+				FA2409F42B58624A0024DEFC /* ParallaxImage.swift in Sources */,
+				FA2409FA2B5883F10024DEFC /* NegativeTitle.swift in Sources */,
 				FA2F00512B559D7C00125AD9 /* Text+Extension.swift in Sources */,
 				FA605B722B55580A0046AB81 /* LE_MMA_style_pageApp.swift in Sources */,
+				FA2409F22B585FDC0024DEFC /* CustomScrollView.swift in Sources */,
+				FA2409F72B587AC80024DEFC /* FirstScreenContents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
