@@ -17,6 +17,7 @@
 		FA605B742B55580A0046AB81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA605B732B55580A0046AB81 /* ContentView.swift */; };
 		FA605B762B55580B0046AB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605B752B55580B0046AB81 /* Assets.xcassets */; };
 		FA605B792B55580B0046AB81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605B782B55580B0046AB81 /* Preview Assets.xcassets */; };
+		FAEF6E1C2B5B210E003BE956 /* viewWillDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FA605B732B55580A0046AB81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA605B752B55580B0046AB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA605B782B55580B0046AB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewWillDisappear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				FA2409F82B5883DE0024DEFC /* Components */,
 				FA2409F52B587AA60024DEFC /* ScreenContents */,
 				FA2409F32B58624A0024DEFC /* ParallaxImage.swift */,
+				FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */,
 				FA2F00552B55AE7900125AD9 /* ScrollView.swift */,
 				FA605B752B55580B0046AB81 /* Assets.xcassets */,
 				FA605B772B55580B0046AB81 /* Preview Content */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEF6E1C2B5B210E003BE956 /* viewWillDisappear.swift in Sources */,
 				FA605B742B55580A0046AB81 /* ContentView.swift in Sources */,
 				FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */,
 				FA2409F42B58624A0024DEFC /* ParallaxImage.swift in Sources */,

@@ -15,8 +15,8 @@ struct NegativeTitle: View {
     var paddingTop: (Edge.Set, CGFloat) = (.top, 0)
     var body: some View {
         Text(text)
-            .foregroundStyle(.white)
-            .blendMode(.difference)
+            .foregroundStyle(.white) //foreground color (text color)
+            .blendMode(.difference)  //each of these modifiers returns a new version of a view(component)
             .overlay(Text(text).blendMode(.hue))
             .overlay(Text(text).foregroundStyle(.white).blendMode(.overlay))
             .overlay(Text(text).foregroundStyle(.black).blendMode(.overlay))
