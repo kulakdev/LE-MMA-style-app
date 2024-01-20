@@ -18,6 +18,8 @@
 		FA605B762B55580B0046AB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605B752B55580B0046AB81 /* Assets.xcassets */; };
 		FA605B792B55580B0046AB81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605B782B55580B0046AB81 /* Preview Assets.xcassets */; };
 		FAEF6E1C2B5B210E003BE956 /* viewWillDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */; };
+		FAEF6E1F2B5C4ECF003BE956 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = FAEF6E1E2B5C4ECF003BE956 /* Inject */; };
+		FAEF6E212B5C6B0E003BE956 /* SecondScreenContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E202B5C6B0E003BE956 /* SecondScreenContents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		FA605B752B55580B0046AB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA605B782B55580B0046AB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewWillDisappear.swift; sourceTree = "<group>"; };
+		FAEF6E202B5C6B0E003BE956 /* SecondScreenContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenContents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEF6E1F2B5C4ECF003BE956 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2409F62B587AC80024DEFC /* FirstScreenContents.swift */,
+				FAEF6E202B5C6B0E003BE956 /* SecondScreenContents.swift */,
 			);
 			path = ScreenContents;
 			sourceTree = "<group>";
@@ -88,7 +93,7 @@
 				FA2409F82B5883DE0024DEFC /* Components */,
 				FA2409F52B587AA60024DEFC /* ScreenContents */,
 				FA2409F32B58624A0024DEFC /* ParallaxImage.swift */,
-				FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */,
+				FAEF6E222B5C6DAF003BE956 /* Extensions */,
 				FA2F00552B55AE7900125AD9 /* ScrollView.swift */,
 				FA605B752B55580B0046AB81 /* Assets.xcassets */,
 				FA605B772B55580B0046AB81 /* Preview Content */,
@@ -102,6 +107,14 @@
 				FA605B782B55580B0046AB81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAEF6E222B5C6DAF003BE956 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +135,7 @@
 			);
 			name = "LE-MMA-style-page";
 			packageProductDependencies = (
+				FAEF6E1E2B5C4ECF003BE956 /* Inject */,
 			);
 			productName = "LE-MMA-style-page";
 			productReference = FA605B6E2B55580A0046AB81 /* LE-MMA-style-page.app */;
@@ -154,6 +168,7 @@
 			packageReferences = (
 				FA605B7F2B555EF80046AB81 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				FA2F00522B55A36000125AD9 /* XCRemoteSwiftPackageReference "SwiftFX" */,
+				FAEF6E1D2B5C4ECF003BE956 /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			productRefGroup = FA605B6F2B55580A0046AB81 /* Products */;
 			projectDirPath = "";
@@ -203,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEF6E1C2B5B210E003BE956 /* viewWillDisappear.swift in Sources */,
+				FAEF6E212B5C6B0E003BE956 /* SecondScreenContents.swift in Sources */,
 				FA605B742B55580A0046AB81 /* ContentView.swift in Sources */,
 				FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */,
 				FA2409F42B58624A0024DEFC /* ParallaxImage.swift in Sources */,
@@ -358,6 +374,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kulakdev.LE-MMA-style-page";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -388,6 +408,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kulakdev.LE-MMA-style-page";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -436,7 +460,23 @@
 				minimumVersion = 0.54.0;
 			};
 		};
+		FAEF6E1D2B5C4ECF003BE956 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAEF6E1E2B5C4ECF003BE956 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAEF6E1D2B5C4ECF003BE956 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA605B662B55580A0046AB81 /* Project object */;
 }

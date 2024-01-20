@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Inject
 
 struct ContentView: View {
     let hardwareScreenSize = UIScreen.main.bounds.size
@@ -14,7 +15,7 @@ struct ContentView: View {
     var topSafeArea: CGFloat {
         hardwareScreenSize.height > iphoneSE3 ? 44.0 : 11.0
     }
-    
+    @ObservedObject private var iO = Inject.observer
     @State private var scrollPosition: CGPoint = .zero
     var body: some View {
         GeometryReader { geometry in
@@ -63,6 +64,7 @@ struct ContentView: View {
         }
         .ignoresSafeArea()
         .background(.black)
+        .enableInjection()
     }
     
     
