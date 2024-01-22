@@ -35,7 +35,7 @@ struct SecondScreenContents: View {
     
     @ViewBuilder
     func buildScrollyThing() -> some View {
-        var rotation: CGFloat = -scrollPosition.y * 0.5
+        var rotation: CGFloat = -scrollPosition.y * 0.85
         Image(uiImage: UIImage(named: "deco_shape")!)
             .resizable()
             .frame(width: 76, height: 76)

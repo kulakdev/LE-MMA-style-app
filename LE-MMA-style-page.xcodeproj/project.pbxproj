@@ -20,6 +20,7 @@
 		FAEF6E1C2B5B210E003BE956 /* viewWillDisappear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */; };
 		FAEF6E1F2B5C4ECF003BE956 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = FAEF6E1E2B5C4ECF003BE956 /* Inject */; };
 		FAEF6E212B5C6B0E003BE956 /* SecondScreenContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E202B5C6B0E003BE956 /* SecondScreenContents.swift */; };
+		FAEF6E242B5C7418003BE956 /* AnimatedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF6E232B5C7418003BE956 /* AnimatedHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA605B782B55580B0046AB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAEF6E1B2B5B210E003BE956 /* viewWillDisappear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewWillDisappear.swift; sourceTree = "<group>"; };
 		FAEF6E202B5C6B0E003BE956 /* SecondScreenContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenContents.swift; sourceTree = "<group>"; };
+		FAEF6E232B5C7418003BE956 /* AnimatedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				FA605B712B55580A0046AB81 /* LE_MMA_style_pageApp.swift */,
 				FA605B732B55580A0046AB81 /* ContentView.swift */,
+				FAEF6E232B5C7418003BE956 /* AnimatedHeaderView.swift */,
 				FA2F00502B559D7C00125AD9 /* Text+Extension.swift */,
 				FA2409F12B585FDC0024DEFC /* CustomScrollView.swift */,
 				FA2409F82B5883DE0024DEFC /* Components */,
@@ -221,6 +224,7 @@
 				FAEF6E212B5C6B0E003BE956 /* SecondScreenContents.swift in Sources */,
 				FA605B742B55580A0046AB81 /* ContentView.swift in Sources */,
 				FA2F00562B55AE7900125AD9 /* ScrollView.swift in Sources */,
+				FAEF6E242B5C7418003BE956 /* AnimatedHeaderView.swift in Sources */,
 				FA2409F42B58624A0024DEFC /* ParallaxImage.swift in Sources */,
 				FA2409FA2B5883F10024DEFC /* NegativeTitle.swift in Sources */,
 				FA2F00512B559D7C00125AD9 /* Text+Extension.swift in Sources */,
