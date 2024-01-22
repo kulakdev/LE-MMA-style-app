@@ -27,73 +27,56 @@ struct SecondScreenContents: View {
                 HStack {
                     buildScrollyThing()
                     Spacer()
-                    VStack {
-                        Text("We Create")
-                            .font(.system(size: 24, weight: .bold, design: .rounded))
-                        Text("Digital")
-                            .font(.system(size: 24, weight: .medium, design: .serif).italic())+Text(" Spaces").font(.system(size: 24, weight: .bold, design: .rounded))
-                    }
+                    buildTitleView()
                     Spacer()
                     buildScrollyThing()
                 }
                 .foregroundStyle(.white)
-                HStack {
-                    CurlyBraceNumberAndText(number: "01", title: "Quality", text: Strings.text1S, geometry: geometry)
-                        .onTapGesture {
-                            toggleCurrentText(n: 1)
-                        }
-                    Spacer()
-                }
-                HStack {
-                    Spacer()
-                    CurlyBraceNumberAndText(number: "02", title: "Creativity", text: Strings.text2S, geometry: geometry)
-                        .onTapGesture {
-                            toggleCurrentText(n: 2)
-                        }
-                }
-                CurlyBraceNumberAndText(number: "03", title: "Collaboration", text: Strings.text3S , geometry: geometry)
-                    .onTapGesture {
-                        toggleCurrentText(n: 3)
-                    }
-                Spacer()
+                buildTextViews()
             }
             .frame(maxWidth: .infinity, maxHeight: geometry.size.height * 2)
             .background(
-                ZStack{
-                    Image("BG2_5")
-                        .resizable()
-                        .scaledToFill()
-                        .background(Color.red)
-                    Image("BG2_1")
-                        .resizable()
-                        .scaledToFill()
-                        .offset(y: -geo.frame(in: .global).origin.y / 2)
-                    Image("BG2_4")
-                        .resizable()
-                        .scaledToFill()
-                    Image("BG2_3")
-                        .resizable()
-                        .scaledToFill()
-                        .offset(y: -geo.frame(in: .global).origin.y / 8)
-                    Image("BG2_2")
-                        .resizable()
-                        .scaledToFill()
-                    Image("BG2_GLOW")
-                        .resizable()
-                        .scaledToFill()
-                        .offset(y: geo.frame(in: .global).origin.y / 8)
-
-                        .mask(
-                            Image("pog")
-                                .resizable()
-                                .scaledToFill())
-                }
+                buildParallaxLayeredView(geo: geo)
             )
             .clipShape(.rect(cornerRadius: 20, style: .continuous))
             .zIndex(2.0)
             .frame(height: geometry.size.height )
         }
     }
+    
+    @ViewBuilder
+    func buildTitleView() -> some View {
+        VStack {
+            Text("We Create")
+                .font(.system(size: 24, weight: .bold, design: .rounded))
+            Text("Digital")
+                .font(.system(size: 24, weight: .medium, design: .serif).italic())+Text(" Spaces").font(.system(size: 24, weight: .bold, design: .rounded))
+        }
+    }
+    
+    @ViewBuilder
+    func buildTextViews() -> some View {
+        HStack {
+            CurlyBraceNumberAndText(number: "01", title: "Quality", text: Strings.text1S, geometry: geometry)
+                .onTapGesture {
+                    toggleCurrentText(n: 1)
+                }
+            Spacer()
+        }
+        HStack {
+            Spacer()
+            CurlyBraceNumberAndText(number: "02", title: "Creativity", text: Strings.text2S, geometry: geometry)
+                .onTapGesture {
+                    toggleCurrentText(n: 2)
+                }
+        }
+        CurlyBraceNumberAndText(number: "03", title: "Collaboration", text: Strings.text3S , geometry: geometry)
+            .onTapGesture {
+                toggleCurrentText(n: 3)
+            }
+        Spacer()
+    }
+    
     
     @ViewBuilder
     func buildScrollyThing() -> some View {
@@ -110,6 +93,46 @@ struct SecondScreenContents: View {
             .rotationEffect(.degrees(rotation))
             .animation(.easeInOut, value: rotation)
             .padding(12)
+    }
+    
+    @ViewBuilder
+    func buildParallaxLayeredView(geo: GeometryProxy) -> some View {
+        // A few image layers of the same size stacked on top of each other to
+        // create an advanced parallax effect. No other ways of doing that other than use PNG
+        ZStack {
+            // Background image
+            Image("BG2_5")
+                .resizable()
+                .scaledToFill()
+                .background(Color.red)
+            // Lardge top left cicle
+            Image("BG2_1")
+                .resizable()
+                .scaledToFill()
+                .offset(y: -geo.frame(in: .global).origin.y / 2)
+            // Head
+            Image("BG2_4")
+                .resizable()
+                .scaledToFill()
+            // Tiny circle on the right middle of the screen
+            Image("BG2_3")
+                .resizable()
+                .scaledToFill()
+                .offset(y: -geo.frame(in: .global).origin.y / 8)
+            // Medium circle on the top right
+            Image("BG2_2")
+                .resizable()
+                .scaledToFill()
+            // Reflection for the middle right circle
+            Image("BG2_GLOW")
+                .resizable()
+                .scaledToFill()
+                .offset(y: geo.frame(in: .global).origin.y / 8)
+                .mask(
+                    Image("pog")
+                        .resizable()
+                        .scaledToFill())
+        }
     }
 }
 
