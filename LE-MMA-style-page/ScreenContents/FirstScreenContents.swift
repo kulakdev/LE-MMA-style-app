@@ -12,7 +12,7 @@ struct FirstScreenContents: View {
     var body: some View {
         GeometryReader { geo in
             VStack {
-                Spacer(minLength: 290)
+                Spacer(minLength: geometry.size.height * 0.45)
                 HStack {
                     Text("L:mao is a global creative studio rooted in effective business solutions in design, branding, motion and developing.\n\n We transform ideas and metaphors into a visual language that works effectively and helps your brand speak. \n\n We provide our partners with unique digital and strategic solutions that unlock your business and deliver value.")
                         .font(.system(size: 14))

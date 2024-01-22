@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Inject
 
 @main
 struct LE_MMA_style_pageApp: App {

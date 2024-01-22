@@ -27,16 +27,8 @@ struct CustomScrollView: View {
                     ParallaxImage(geometry: geometry, imageName: "underwater") {
                         FirstScreenContents(geometry: geometry)
                     }
-                    VStack {
-                        Text("lorem ipsum dolor ")
-                            .foregroundStyle(.white)
-                            .frame(maxWidth: .infinity, maxHeight: geometry.size.height)
-                            .background(.blue)
-                            .clipShape(.rect(cornerRadius: 20, style: .continuous))
-                            .zIndex(2.0)
-                    }
-                    .background(.black)
-                    .frame(height: geometry.size.height )
+                    SecondScreenContents(geometry: geometry, scrollPosition: $scrollPosition)
+                        .frame(width: geometry.size.width, height: geometry.size.height * 2)
                     ParallaxImage(geometry: geometry, imageName: "pexels5") {
                         Text("loremIpsum")
                             .frame(width: geometry.size.width, height: geometry.size.height)
