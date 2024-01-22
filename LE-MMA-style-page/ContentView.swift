@@ -17,11 +17,19 @@ struct ContentView: View {
     }
     @ObservedObject private var iO = Inject.observer
     @State private var scrollPosition: CGPoint = .zero
+    @State var isOpen: Bool = false
     var body: some View {
         GeometryReader { geometry in
-            var reachedPoint = scrollPosition.y * -1 + topSafeArea + 72  < geometry.size.height
-            CustomScrollView(geometry: geometry, scrollPosition: $scrollPosition)
-            AnimatedHeaderView(geometry: geometry, topSafeArea: topSafeArea, reachedPoint: reachedPoint)
+            let reachedPoint = scrollPosition.y * -1 + topSafeArea + 72  < geometry.size.height
+            ZStack(alignment: .top) {
+                CustomScrollView(geometry: geometry, scrollPosition: $scrollPosition)
+                VStack{Text("This is going to be a menu in the future").foregroundStyle(.white)}
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(.black)
+                    .offset(x: isOpen ? 0 : geometry.size.width)
+                    .animation(.easeInOut, value: isOpen)
+                AnimatedHeaderView(geometry: geometry, topSafeArea: topSafeArea, reachedPoint: reachedPoint, isOpen: $isOpen)
+            }
         }
         .ignoresSafeArea()
         .background(.black)

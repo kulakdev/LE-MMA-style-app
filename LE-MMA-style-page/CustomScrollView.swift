@@ -28,7 +28,7 @@ struct CustomScrollView: View {
                         FirstScreenContents(geometry: geometry)
                     }
                     SecondScreenContents(geometry: geometry, scrollPosition: $scrollPosition)
-                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .frame(width: geometry.size.width, height: geometry.size.height * 2)
                     ParallaxImage(geometry: geometry, imageName: "pexels5") {
                         Text("loremIpsum")
                             .frame(width: geometry.size.width, height: geometry.size.height)
